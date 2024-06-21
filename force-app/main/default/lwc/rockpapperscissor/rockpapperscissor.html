@@ -1,0 +1,32 @@
+<template>
+  <lightning-card title="Rock Paper Scissors Game" icon-name="custom:custom47">
+      <div class="slds-var-m-around_small">
+          <p>Player Score: {playerScore}</p>
+          <p>Computer Score: {computerScore}</p>
+          <p>Winner: {winner}</p>
+          <p>Your Guess: {playerGuess}</p>
+          <p>Computer Guess: {computerGuess}</p>
+
+          <lightning-button
+              variant="neutral"
+              label="Rock"
+              name={ROCK}
+              onclick={handleClick}
+          ></lightning-button>
+          <lightning-button
+              variant="neutral"
+              label="Paper"
+              name={PAPER}
+              onclick={handleClick}
+          ></lightning-button>
+          <lightning-button
+              variant="neutral"
+              label="Scissor"
+              name={SCISSOR}
+              onclick={handleClick}
+          ></lightning-button>
+      </div>
+  </lightning-card>
+</template>
+
+
