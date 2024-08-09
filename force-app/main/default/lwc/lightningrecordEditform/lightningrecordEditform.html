@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Case Record Edit Form" icon-name="standard:case">
+        <div class="slds-m-around_medium">
+            <lightning-record-edit-form
+                object-api-name="Case"
+                record-id={recordId}
+                onsuccess={handleSuccess}>
+                
+                <lightning-input-field field-name="CaseNumber"></lightning-input-field>
+                
+                <lightning-input-field field-name="Priority"></lightning-input-field>
+                
+                <lightning-input-field field-name="Status"></lightning-input-field>
+               
+                <div class="slds-m-top_medium">
+                    <lightning-button type="submit" label="Save"></lightning-button>
+                </div>
+            </lightning-record-edit-form>
+        </div>
+    </lightning-card>
+    </template>
+

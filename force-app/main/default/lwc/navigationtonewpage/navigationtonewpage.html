@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="CREATE CONTACT" icon-name="custom:custom47">
+        <div class="slds-var-m-around_small">
+            <lightning-input label="First Name" value={firstName} onchange={handleFirstNameChange}></lightning-input>
+            <lightning-input label="Last Name" value={lastName} onchange={handleLastNameChange}></lightning-input>
+            <lightning-input label="Email" value={Email} onchange={handleEmailChange}></lightning-input>
+            <lightning-button variant="brand" label="Create Contact" onclick={createContact}></lightning-button>
+        </div>
+    </lightning-card>
+</template>

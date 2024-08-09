@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Account Details" icon-name="standard:account">
+        <div class="slds-m-around_medium">
+            <template if:true={account}>
+               <lightning-input label="Name :" value={account.Name} readonly></lightning-input>
+               <lightning-input label="Industry :" value={account.Industry} readonly></lightning-input>
+               <lightning-input label="Type :" value={account.Type} readonly></lightning-input>
+                <!-- Add more fields as needed -->
+            
+                
+            </template>
+            <template if:false={account}>
+                <p>No account details to display.</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>
+
+ 

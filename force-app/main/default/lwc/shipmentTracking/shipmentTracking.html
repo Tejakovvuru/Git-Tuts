@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Shipment Status" icon-name="custom:custom63">
+        <div class="slds-p-horizontal_small">
+            <template if:true={shipmentStatus}>
+                <p>Shipment Status: {shipmentStatus}</p>
+            </template>
+            <template if:true={error}>
+                <p class="slds-text-color_error">Error: {error}</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>

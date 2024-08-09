@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Leadrecord Viewform" icon-name="standard:lead">
+        <ul class="slds-m-around_medium">
+            <lightning-record-view-form
+    object-api-name="Lead"
+    record-id={recordId}
+>
+    <lightning-output-field field-name="Name"> </lightning-output-field>
+    <lightning-output-field field-name="Company"> </lightning-output-field>
+    <lightning-output-field field-name="Lead Status"> </lightning-output-field>
+</lightning-record-view-form>
+        </ul>
+    </lightning-card>
+    </template>
